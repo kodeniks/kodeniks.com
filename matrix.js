@@ -1,7 +1,7 @@
 // https://codepen.io/towc/pen/YXGYJY
-var w = (c.width = window.innerWidth),
-  h = (c.height = window.innerHeight),
-  ctx = c.getContext('2d'),
+var w = (matrix.width = window.innerWidth),
+  h = (matrix.height = window.innerHeight),
+  ctx = matrix.getContext('2d'),
   minDist = 10,
   maxDist = 30,
   initialWidth = 10,
@@ -139,8 +139,8 @@ init();
 anim();
 
 window.addEventListener('resize', function () {
-  w = c.width = window.innerWidth;
-  h = c.height = window.innerHeight;
+  w = matrix.width = window.innerWidth;
+  h = matrix.height = window.innerHeight;
   starter.x = w / 2;
   starter.y = h / 2;
 
