@@ -1,20 +1,57 @@
 body {
-  background-color: black;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+  color: #fff;
+  background: linear-gradient(135deg, #120025 0%, #001221 100%);
 }
 
 canvas {
-  position: absolute;
-  opacity: 0.5;
+  position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  z-index: -1;
 }
 
-.logo {
-  position: absolute;
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-logo {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.tagline {
+  max-width: 600px;
+}
+
+.services {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.service-list {
+  list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-list li {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  min-width: 200px;
 }
